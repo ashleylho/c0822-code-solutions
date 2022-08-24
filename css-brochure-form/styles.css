@@ -1,0 +1,62 @@
+h2 {
+  color: rgb(236 97 92);
+  font-family: AtlasGrotesk-Medium, sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+form {
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+label {
+  font-family: BrandonGrotesque-Regular, sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.25px;
+  line-height: 1em;
+  padding-left: 8px;
+}
+
+div {
+  margin-bottom: 10px;
+}
+
+input,
+select {
+  font-family: BrandonGrotesk, sans-serif;
+  border-color: rgb(224 224 224);
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  width: 100%;
+  border-width: 1px;
+}
+
+input[placeholder] {
+  color: rgb(224 224 224);
+  font-family: BrandonGrotesque-Regular, sans-serif;
+  padding: 0.5rem;
+  line-height: 1.25rem;
+}
+
+select {
+  background-color: rgb(243 243 243);
+  color: rgb(94 94 94);
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+}
+
+#button {
+  background-color: rgb(236 97 92);
+  color: white;
+  font-family: AtlasGrotesk-Medium, sans-serif;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  width: 80px;
+  position: absolute;
+  right: 385px;
+  text-align: center;
+}
