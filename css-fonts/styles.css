@@ -1,0 +1,14 @@
+h1 {
+  font-family: 'Amatic SC', cursive;
+  font-size: 60px;
+}
+
+h2 {
+  font-style: italic;
+  font-weight: normal;
+}
+
+h2, body {
+  font-family: 'Monsterrat', sans-serif;
+  line-height: 2em;
+}
