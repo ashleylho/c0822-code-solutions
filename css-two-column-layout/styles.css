@@ -1,0 +1,71 @@
+body {
+  font-family: Karla, sans-serif;
+}
+
+.container {
+  width: 700px;
+  margin: 35px auto;
+}
+
+.row {
+  display: flex;
+}
+
+.full-column {
+  text-align: center;
+  width: 75%;
+  margin: 0 auto;
+}
+
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 40px;
+  margin-bottom: 17px;
+  font-weight: 600;
+}
+
+.full-column p {
+  font-size: 12px;
+  color: rgb(119 119 119);
+  line-height: 1.75em;
+  margin-bottom: 40px;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  margin-top: 30px;
+}
+
+.caption {
+  font-size: 12px;
+  line-height: 1.5em;
+  color: rgb(119 119 119);
+  width: 230px;
+}
+
+.two-column {
+  display: flex;
+  margin-right: 100px;
+  margin-bottom: 35px;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  margin-right: 3px;
+}
+
+.learn-button {
+  text-transform: uppercase;
+  color: rgb(209 76 69);
+  border: solid rgb(209 76 69) 1px;
+  background-color: white;
+  padding: 9px 35px;
+  font-size: 11px;
+  font-weight: 525;
+  letter-spacing: 0.02em;
+  margin-top: 5px;
+}
