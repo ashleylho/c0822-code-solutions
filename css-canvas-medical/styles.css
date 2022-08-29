@@ -5,29 +5,78 @@ body {
 .container {
   color: rgb(110 110 110);
   width: 90%;
-  height: 540px;
   margin: 0 auto;
+}
+
+h1,
+h2 {
+  font-family: "Tiempos Headline", serif;
+  margin-top: 10%;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5rem;
+}
+
+button {
+  background-color: rgb(41 68 100);
+  color: white;
+  font-size: 20px;
+  padding: 1rem 3rem;
+  border-radius: 0.3rem;
+  border: none;
+  font-weight: 100;
+}
+
+.absolute > h1 {
+  font-size: 36px;
+  font-weight: lighter;
+}
+
+.absolute > p {
+  width: 110%;
+}
+
+hr {
+  border-color: rgb(255 255 255 / 25%);
+  border-width: 0.01em;
+  margin-bottom: 50px;
+  margin-top: 0;
 }
 
 .image-section {
   margin: 0 auto;
+  position: relative;
 }
 
 img {
-  width: 80%;
-  position: relative;
+  width: 85%;
+  display: block;
   margin: 0 auto;
 }
 
 .overlay {
-  background: linear-gradient(transparent, rgb(0 0 0 / 75%));
+  background: linear-gradient(rgb(121 121 121 / 30%), rgb(104 103 103 / 50%));
   position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 85%;
+  margin: 0 auto;
 }
 
 .absolute {
   position: absolute;
   width: 33.3%;
-  left: 200px;
+  top: 200px;
+  left: 18%;
+  color: white;
+}
+
+.absolute > button {
+  margin-top: 20px;
 }
 
 #contact-us {
@@ -43,7 +92,6 @@ footer {
 
 .row {
   display: flex;
-  height: 100%;
 }
 
 .full-column {
@@ -51,35 +99,58 @@ footer {
   margin: 0 auto;
 }
 
-h1,
-h2 {
-  font-family: "Tiempos Headline", serif;
-  margin-top: 50px;
+.header * h1 {
+  color: rgb(41 68 100);
+  margin-left: 90px;
 }
 
-.header > h1 {
+.canvas,
+.logo {
   color: rgb(41 68 100);
+  margin-left: 90px;
+  font-family: "Tiempos Headline", serif;
+  font-size: 40px;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+
+.canvas {
+  padding-top: 30px;
+  margin-bottom: 30px;
 }
 
 #nav {
   display: flex;
   justify-content: space-evenly;
-  padding-top: 50px;
+  padding-top: 60px;
+  color: rgb(167 167 167);
 }
 
-p {
-  font-size: 13px;
+h2 {
+  font-size: 28px;
 }
 
 .two-column,
 .two-column-company-product {
   margin: 0 auto;
   width: 50%;
-  height: 100%;
 }
 
 .two-column > p, {
   font-size: 16px;
+}
+
+.clinician-container {
+  margin-top: 50px;
+}
+
+.clinician-container * p {
+  display: flex;
+  justify-content: center;
+}
+
+.clinician-container * .two-column {
+  padding: 40px 0;
 }
 
 .clinicians,
@@ -87,72 +158,59 @@ p {
   padding-bottom: 10px;
 }
 
-.clinician-container * p {
-  width: 23rem;
+.clinicians {
+  font-size: 18px;
 }
 
 .clinician-info {
-  margin-bottom: 60px;
+  width: 60%;
+  margin: 0 auto;
 }
 
-#clinician-names-1 {
-  margin-left: 140px;
-}
-
-#clinician-names-2 {
-  margin-right: 70px;
-}
-
-button {
-  background-color: rgb(41 68 100);
-  color: white;
-  font-size: 16px;
-  padding: 1rem 3rem;
-  border-radius: 0.5rem;
-  border: none;
-}
-
-#learn-more {
+.learn-more-container {
   background-color: white;
-  margin: 45px 0;
 }
 
-.two-thirds-column {
-  margin: auto 90px;
+.learn-more-container * h2,
+.learn-more-container * p {
+  margin-left: 90px;
 }
 
-#learn-button {
-  margin-left: 375px;
-  margin-top: 55px;
+.learn-more-container * p {
+  margin-bottom: 40px;
+  margin-top: 0;
+}
+
+.learn-more-container * .two-column {
+  display: flex;
+  justify-content: flex-end;
+  margin: auto 8% auto 0;
+}
+
+#learn-info {
+  flex-direction: column;
 }
 
 footer {
-  display: flex;
   background-color: rgb(250 250 250);
-  padding: 1.5rem 0;
+  padding: 30px 0 30px 90px;
 }
 
 .bottom {
-  font-size: 16px;
-  width: 20%;
-  margin-left: 90px;
+  font-size: 18px;
+  display: inline-block;
+  padding-right: 30px;
 }
 
 .canvas-container {
   background-color: rgb(82 83 81);
-  color: white;
+  color: rgb(214 214 214);
   height: 350px;
 }
 
 .logo {
-  letter-spacing: 0.1rem;
-  font-weight: lighter;
   margin-top: 60px;
-}
-
-.address {
-  font-size: 13px !important;
-  line-height: 1.5rem;
+  color: rgb(253 253 253);
 }
 
 .logo,
@@ -161,7 +219,7 @@ footer {
 }
 
 .two-column > .logo {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .two-column-company-product {
@@ -169,5 +227,5 @@ footer {
 }
 
 .two-column-company-product > p {
-  font-size: 16px;
+  font-size: 18px;
 }
