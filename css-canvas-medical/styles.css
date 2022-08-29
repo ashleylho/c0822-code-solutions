@@ -104,19 +104,11 @@ footer {
   margin-left: 90px;
 }
 
-.canvas,
 .logo {
-  color: rgb(41 68 100);
+  width: 20%;
+  padding-top: 80px;
   margin-left: 90px;
-  font-family: "Tiempos Headline", serif;
-  font-size: 40px;
-  font-weight: 100;
-  letter-spacing: 1px;
-}
-
-.canvas {
-  padding-top: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 #nav {
@@ -208,18 +200,8 @@ footer {
   height: 350px;
 }
 
-.logo {
-  margin-top: 60px;
-  color: rgb(253 253 253);
-}
-
-.logo,
 .address {
   margin-left: 90px;
-}
-
-.two-column > .logo {
-  margin-bottom: 30px;
 }
 
 .two-column-company-product {
