@@ -16,7 +16,7 @@ body {
   display: flex;
 }
 
-.full-column {
+.column-full {
   width: 100%;
 }
 
@@ -26,8 +26,11 @@ body {
   font-weight: bold;
 }
 
-.one-fourth-column {
+.column-one-fourth {
   width: 25%;
+}
+
+.center {
   text-align: center;
 }
 
