@@ -101,7 +101,7 @@ footer {
   background-color: rgb(250 250 250);
 }
 
-.full-column {
+.clinicians-prefer-canvas {
   text-align: center;
   margin: 0 auto;
 }
@@ -129,14 +129,12 @@ h2 {
   font-size: 28px;
 }
 
-.two-column,
-.two-column-company-product {
-  margin: 0 auto;
+.column-half {
   width: 50%;
 }
 
-.two-column > p, {
-  font-size: 16px;
+.centered {
+  margin: 0 auto;
 }
 
 .clinician-container {
@@ -148,7 +146,7 @@ h2 {
   justify-content: center;
 }
 
-.clinician-container * .two-column {
+.clinician-container * .column-half {
   padding: 40px 0;
 }
 
@@ -180,7 +178,7 @@ h2 {
   margin-top: 0;
 }
 
-.learn-more-container * .two-column {
+.learn-more-container * .centered {
   display: flex;
   justify-content: flex-end;
   margin: auto 8% auto 0;
@@ -216,10 +214,10 @@ footer {
   padding-top: 20px;
 }
 
-.two-column-company-product {
+.company-product {
   padding-top: 60px;
 }
 
-.two-column-company-product > p {
+.company-product > p {
   font-size: 18px;
 }
