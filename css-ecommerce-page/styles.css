@@ -2,6 +2,10 @@
   font-family: "DM Sans", sans-serif;
 }
 
+body {
+  margin-top: 0;
+}
+
 .container {
   width: 100%;
 }
@@ -25,7 +29,8 @@
 
 h1 {
   font-weight: lighter;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
+  font-size: 24px;
 }
 
 .item-info {
@@ -35,6 +40,7 @@ h1 {
 
 .item {
   padding: 10px;
+  font-size: 12px;
 }
 
 .size,
