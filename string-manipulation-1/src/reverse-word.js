@@ -5,10 +5,9 @@
 // show the output
 
 function reverseWord(word) {
-  var reverseWordResult;
-  for (var i = word.length - 1; i > 0; i--) {
-    var reverse = word[i];
-    reverseWordResult = reverse + word[i];
+  var reverseWordResult = word[word.length - 1];
+  for (var i = word.length - 2; i >= 0; i--) {
+    reverseWordResult.push(word[i]);
   }
   return reverseWordResult;
 }
