@@ -14,4 +14,4 @@ function handleClick(event) {
   // $circle.classList.toggle('click-circle');
 }
 
-$body.addEventListener('click', handleClick);
+$circle.addEventListener('click', handleClick);
