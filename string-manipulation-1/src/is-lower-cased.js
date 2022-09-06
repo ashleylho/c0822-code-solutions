@@ -7,10 +7,13 @@
 // show output
 
 function isLowerCased(word) {
-  var isLowerCasedResult = true;
+  var isLowerCasedResult;
   for (var i = 0; i < word.length; i++) {
-    if (word[i] === word.toUpperCase(word[i])) {
+    if (word[i] === word[i].toLowerCase()) {
+      isLowerCasedResult = true;
+    } else {
       isLowerCasedResult = false;
+      break;
     }
   }
   return isLowerCasedResult;

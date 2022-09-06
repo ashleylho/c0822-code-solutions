@@ -7,8 +7,6 @@
 // show the output
 
 function capitalize(word) {
-  var capitalizeResult;
-  var lowerCase = word.toLowerCase(word);
-  capitalizeResult = word.toUpperCase(lowerCase[0]);
+  var capitalizeResult = word[0].toUpperCase() + word.slice(1).toLowerCase();
   return capitalizeResult;
 }

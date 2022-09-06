@@ -9,10 +9,11 @@
 function isUpperCased(word) {
   var isUpperCasedResult;
   for (var i = 0; i < word.length; i++) {
-    if (word[i] === word.toUpperCase(word[i])) {
+    if (word[i] === word[i].toUpperCase()) {
       isUpperCasedResult = true;
     } else {
       isUpperCasedResult = false;
+      break;
     }
   }
   return isUpperCasedResult;
