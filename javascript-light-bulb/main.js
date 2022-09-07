@@ -2,16 +2,14 @@ var $body = document.querySelector('body');
 var $circle = document.querySelector('.circle');
 
 function handleClick(event) {
-  if ($body.className === 'lightbulb') {
+  var currentStatus = $body.className;
+  if (currentStatus === 'lightbulb') {
     $body.className = 'dark';
     $circle.className = 'click-circle';
   } else {
     $body.className = 'lightbulb';
     $circle.className = 'circle';
   }
-  // other option:
-  // $body.classList.toggle('dark');
-  // $circle.classList.toggle('click-circle');
 }
 
 $circle.addEventListener('click', handleClick);
