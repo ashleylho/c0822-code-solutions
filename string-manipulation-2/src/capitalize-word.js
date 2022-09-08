@@ -6,5 +6,11 @@
 // show output
 
 function capitalizeWord(word) {
-
+  var capitalizeWordResult;
+  // if (word === 'javascript') {
+  //   capitalizeWordResult = word[0].toUpperCase() + word.slice(1, 4).toLowerCase() + word[4].toUpperCase() + word.slice(5);
+  // } else {
+  capitalizeWordResult = word[0].toUpperCase() + word.slice(1).toLowerCase();
+  // }
+  return capitalizeWordResult;
 }
