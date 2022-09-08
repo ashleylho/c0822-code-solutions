@@ -5,7 +5,7 @@ function handleClick(event) {
   console.log('event.target.tagName', event.target.tagName);
   if (event.target && event.target.matches('button')) {
     var ancestor = event.target.closest('.task-list-item');
-    console.log('closest .task-list-item:', ancestor);
+    console.log('closest.task-list-item:', ancestor);
     ancestor.remove();
   }
 }
