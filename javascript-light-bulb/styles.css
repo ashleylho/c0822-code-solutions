@@ -1,0 +1,30 @@
+.lightbulb {
+  background-color: rgb(247 239 228);
+}
+
+.circle {
+  background: rgb(249 214 132);
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  box-shadow: 0 0 10px rgb(222 189 110);
+}
+
+.container {
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dark {
+  background-color: rgb(17 17 17);
+}
+
+.click-circle {
+  background: rgb(35 35 35);
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  box-shadow: 0 0 10px rgb(0 0 0);
+}
