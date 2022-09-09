@@ -19,11 +19,18 @@ span {
   align-items: center;
 }
 
-/* .green {
+.green {
   color: rgb(112 220 106);
 }
 
 .red {
   color: red;
+}
+
+.black {
+  color: black;
+}
+
+.current {
   border-bottom: solid;
-} */
+}

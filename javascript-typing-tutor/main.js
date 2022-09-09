@@ -1,5 +1,15 @@
 var $span = document.querySelectorAll('span');
+var $html = document.querySelector('html');
+var i = 0;
 
-$span.forEach(span => {
-  span.addEventListener('keydown', function handleKey(event) {});
-});
+$html.addEventListener('keydown', handleKey);
+
+function handleKey(event) {
+  if ($span[i].textContent === event.key) {
+    $span[i].className = 'green';
+    i++;
+    $span[i].className = 'current';
+  } else {
+    $span[i].className = 'red current';
+  }
+}
