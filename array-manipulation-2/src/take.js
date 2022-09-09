@@ -8,6 +8,9 @@
 function take(array, count) {
   var takeResult = [];
   for (var i = 0; i < count; i++) {
+    if (array.length < count) {
+      break;
+    }
     takeResult.push(array[i]);
   }
   return takeResult;

@@ -5,13 +5,10 @@
 // push the result into output
 // return output
 
-// function takeRight(array, count) {
-//   var takeRight = [];
-//   if (count > array.length) {
-//     takeRight.push(array);
-//   } else {
-//     var newArray = array.slice((array.length - count));
-//     takeRight.push(newArray);
-//   }
-//   return takeRight;
-// }
+function takeRight(array, count) {
+  var takeRight = [];
+  for (var i = array.length - 1; i < array.length; i++) {
+    takeRight = (array.slice(-count));
+  }
+  return takeRight;
+}
