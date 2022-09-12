@@ -1,7 +1,7 @@
 /* exported pick */
 // create storage for output (object)
 // go through the list of keys
-// if source[k] === undefined, ignore it
+// if source[i] === undefined, ignore it
 // if keys is in the object, add the key/valaue to the output.
 // return output
 
