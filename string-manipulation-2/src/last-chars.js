@@ -6,9 +6,6 @@
 // return output
 
 function lastChars(length, string) {
-  var lastCharsResult = '';
-  for (var i = string.length; i > 0; i--) {
-    lastCharsResult = string[i] + lastCharsResult;
-  }
+  var lastCharsResult = string.slice(-length);
   return lastCharsResult;
 }

@@ -1,17 +1,10 @@
 /* exported firstChars */
 // create storage for output
-// loop each letter of string until the length
-// take the value of each result and assign it as the new result
+// slice from start of string until length
+// take the value and assign it as the output
 // return output
 
 function firstChars(length, string) {
-  var firstCharsResult = '';
-  for (var i = 0; i < length; i++) {
-    firstCharsResult += string[i];
-    // if (length > string.length) {
-    //   break;
-    // }
-  }
-
+  var firstCharsResult = string.slice(0, length);
   return firstCharsResult;
 }
