@@ -7,8 +7,6 @@
 
 function takeRight(array, count) {
   var takeRight = [];
-  for (var i = array.length - 1; i < array.length; i++) {
-    takeRight = (array.slice(-count));
-  }
+  takeRight = (array.slice(-count));
   return takeRight;
 }
