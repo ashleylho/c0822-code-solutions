@@ -1,14 +1,26 @@
 /* exported omit */
 // create storage for output (empty object)
-// compare keys to object properties
-// if keys are found in source, ignore
-// if keys are not found in source, add key and value to the object
+// look into keys of object(source)
+// assign a counter = 0
+// look into array of keys: if the key does not equal keys[i], move on.
+// if it does, add 1 to counter
+// if the counter is equal to keys.length, add the key-value pair to the output
 // return output
 
 function omit(source, keys) {
   var omitResult = {};
-  for (var i in source) {
-    if (source[keys] !== undefined) { omitResult[keys] = i; }
+  for (var key in source) {
+    var counter = 0;
+    for (var i in keys) {
+      if (key === keys[i]) {
+        break;
+      } else {
+        counter++;
+      }
+      if (counter === keys.length) {
+        omitResult[key] = source[key];
+      }
+    }
   }
   return omitResult;
 }
