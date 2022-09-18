@@ -3,10 +3,11 @@
 
 // if title contains ':' --> split title by ':'
 // call apaStyle function with index 0 and index 1 as arguments
-// contatenate the two results with ': ' in between
+// concatenate the two results with ': ' in between
 // return that result
 
-// if title does not contain ':', --> call apaStyle function with title as argument
+// else if title does not contain ':', --> call apaStyle function with title as argument
+// return that result
 
 // apaStyle function:
 // lowercase entire title
