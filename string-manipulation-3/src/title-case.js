@@ -1,5 +1,14 @@
 /* exported titleCase */
 // create storage for output
+
+// if title contains ':' --> split title by ':'
+// call apaStyle function with index 0 and index 1 as arguments
+// contatenate the two results with ': ' in between
+// return that result
+
+// if title does not contain ':', --> call apaStyle function with title as argument
+
+// apaStyle function:
 // lowercase entire title
 // split title into array of words
 // create an array with all the minor words
@@ -12,15 +21,25 @@
 // then capitalize the first letter of each word and push it into a new array
 // join the array with '-' in between to create the new string
 // word = new string
-// if the word contains ':', then capitalize the first letter of the following word
-// capitalize first letter of the rest of words
 // add each word to array
 // join all the words in the array into a string separated by spaces
 // the result of that becomes the output
 
 function titleCase(title) {
+  if (title.includes(':')) {
+    var array = title.split(': ');
+    var part1 = apaStyle(array[0]);
+    var part2 = apaStyle(array[1]);
+    var newTitle = part1 + ': ' + part2;
+    return newTitle;
+  } else {
+    return apaStyle(title);
+  }
+}
+
+function apaStyle(title) {
   var lowercase = title.toLowerCase();
-  var array = lowercase.split('');
+  var array = lowercase.split(' ');
   var minor = ['and', 'or', 'nor', 'but', 'a', 'an', 'the', 'as', 'at', 'by', 'for', 'in', 'of', 'on', 'per', 'to'];
   var newArray = [];
   for (var i = 0; i < array.length; i++) {
@@ -48,27 +67,7 @@ function titleCase(title) {
       word = array[i].charAt(0).toUpperCase() + array[i].slice(1);
     }
     newArray.push(word);
-
   }
-  // var strings = newArray.join(' ');
-  // if (strings.includes(':')) {
-  //   var colon = strings.split(':');
-  //   for (var j = 0; j < colon.length; j++) {
-  //     var phrase = colon[1].charAt(1).toUpperCase() + colon[1].slice(2);
-  //     var final = colon[0] + ': ' + phrase;
-  //   }
-  // }
-  // console.log(final);
-  // return strings;
+  var strings = newArray.join(' ');
+  return strings;
 }
-// if (strings.includes(':')) {
-//   var colon = strings.split(':');
-//   for (var j = 0; j < colon.length; j++) {
-//     var phrase = colon[1].charAt(1).toUpperCase() + colon[1].slice(2);
-//     var final = colon[0] + ': ' + phrase;
-//   }
-//   finalArray.push(final);
-//   strings = finalArray.join();
-// } else strings = newArray.join(' ');
-//   return strings;
-// }
