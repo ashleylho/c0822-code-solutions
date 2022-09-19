@@ -20,13 +20,15 @@ var calculator = {
     var sum = 0;
     for (var i = 0; i < array.length; i++) {
       sum += array[i];
-    } return sum;
+    }
+    return sum;
   },
   getAverage: function (numbers) {
     var sum = 0;
     for (var i = 0; i < numbers.length; i++) {
       sum += numbers[i];
-    } var avg = sum / numbers.length;
+    }
+    var avg = sum / numbers.length;
     return avg;
   }
 };
