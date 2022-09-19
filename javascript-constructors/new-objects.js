@@ -19,5 +19,5 @@ console.log('value of aNumber:', aNumber);
 console.log('typeof aNumber:', typeof aNumber);
 
 var aBoolean = new Boolean();
-console.log('value of aaBoolean:', aBoolean);
+console.log('value of aBoolean:', aBoolean);
 console.log('typeof aBoolean:', typeof aBoolean);
