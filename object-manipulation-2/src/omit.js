@@ -17,9 +17,9 @@ function omit(source, keys) {
       } else {
         counter++;
       }
-      if (counter === keys.length) {
-        omitResult[key] = source[key];
-      }
+    }
+    if (counter === keys.length) {
+      omitResult[key] = source[key];
     }
   }
   return omitResult;
