@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
+.hidden {
+  display: none;
+}
+
+.container {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.column-full {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fa-chevron-left,
+.fa-chevron-right {
+  font-size: 2rem;
+  margin: 0 8rem;
+}
+
+.fa-star {
+  margin: 0.5rem;
+  font-size: 1.75rem;
+}
