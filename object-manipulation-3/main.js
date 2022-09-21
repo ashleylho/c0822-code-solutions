@@ -2,19 +2,19 @@ console.log('Lodash is loaded:', typeof _ !== 'undefined');
 
 var players = [
   {
-    pName: 'Tinky-Winky',
+    player: 'Tinky-Winky',
     hand: []
   },
   {
-    pName: 'Dipsy',
+    player: 'Dipsy',
     hand: []
   },
   {
-    pName: 'Laa-Laa',
+    player: 'Laa-Laa',
     hand: []
   },
   {
-    pName: 'Po',
+    player: 'Po',
     hand: []
   }
 ];
@@ -65,31 +65,23 @@ function winner(players) {
   var totals = [];
   var sum = 0;
   for (var i = 0; i < players.length; i++) {
-    var value0 = players[i].hand[0].rank;
-    var value1 = players[i].hand[1].rank;
-    if (players[i].hand[0].rank === 'King' || players[i].hand[0].rank === 'Queen' || players[i].hand[0].rank === 'Jack') {
-      value0 = 10;
+    var scores = [];
+    for (var j = 0; j < players[i].hand.length; j++) {
+      var rank = players[i].hand[j].rank;
+      if (players[i].hand[j].rank === 'King' || players[i].hand[j].rank === 'Queen' || players[i].hand[j].rank === 'Jack') {
+        rank = 10;
+      } else if (players[i].hand[j].rank === 'Ace') {
+        rank = 11;
+      }
+      scores.push(rank);
     }
-    if (players[i].hand[0].rank === 'Ace') {
-      value1 = 11;
-    }
-    if (players[i].hand[1].rank === 'King' || players[i].hand[1].rank === 'Queen' || players[i].hand[1].rank === 'Jack') {
-      value0 = 10;
-    }
-    if (players[i].hand[1].rank === 'Ace') {
-      value1 = 11;
-    }
-    sum = value0 + value1;
+    sum = scores[0] + scores[1];
+    players[i].sum = sum;
     totals.push(sum);
   }
-  console.log(totals);
   var winnerScore = Math.max(...totals);
   var index = totals.indexOf(winnerScore);
-  console.log('WINNER:', players[index].pName);
+  console.log('WINNER:', players[index].player);
 }
 
 winner(players);
-
-// in case of tie,
-// new cards need to be assigned to players
-//
