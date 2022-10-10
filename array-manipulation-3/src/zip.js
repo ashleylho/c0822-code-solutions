@@ -13,20 +13,12 @@
 
 function zip(first, second) {
   var result = [];
-  if (first.length <= second.length) {
-    for (var i = 0; i < first.length; i++) {
-      var subArray1 = [];
-      subArray1.push(first[i]);
-      subArray1.push(second[i]);
-      result.push(subArray1);
-    }
-  } else if (second.length < first.length) {
-    for (var j = 0; j < second.length; j++) {
-      var subArray2 = [];
-      subArray2.push(first[j]);
-      subArray2.push(second[j]);
-      result.push(subArray2);
-    }
+  var length = Math.min(first.length, second.length);
+  for (var i = 0; i < length; i++) {
+    var subArray1 = [];
+    subArray1.push(first[i]);
+    subArray1.push(second[i]);
+    result.push(subArray1);
   }
   return result;
 }
