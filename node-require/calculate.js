@@ -5,14 +5,15 @@ const divide = require('./divide');
 
 const x = Number(process.argv[2]);
 const y = Number(process.argv[4]);
+const operation = process.argv[3];
 
-if (process.argv.includes('plus') || process.argv.includes('+')) {
+if (operation === 'plus') {
   console.log('result:', add(x, y));
-} else if (process.argv.includes('minus') || process.argv.includes('-')) {
+} else if (operation === 'minus') {
   console.log('result:', subtract(x, y));
-} else if (process.argv.includes('x') || process.argv.includes('times')) {
+} else if (operation === 'times') {
   console.log('result:', multiply(x, y));
-} else if (process.argv.includes('over') || process.argv.includes('/')) {
+} else if (operation === 'over') {
   console.log('result:', divide(x, y));
 } else {
   console.log('invalid operation');
