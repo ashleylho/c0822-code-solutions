@@ -20,11 +20,10 @@ const grades = {
   }
 };
 
-var gradesArray = Object.values(grades);
-
 const app = express();
 
 app.get('/api/grades', (req, res) => {
+  var gradesArray = Object.values(grades);
   res.json(gradesArray);
 });
 
