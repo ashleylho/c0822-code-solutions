@@ -1,13 +1,9 @@
 {
-  "nextId": 10,
+  "nextId": 11,
   "notes": {
     "2": {
       "id": 2,
       "content": "The event loop, this, closures, and prototypal inheritance are special about JavaScript."
-    },
-    "5": {
-      "id": 5,
-      "content": "In JavaScript, the value of `this` is determined when a function is called; not when it is defined."
     },
     "6": {
       "id": 6,
@@ -15,7 +11,11 @@
     },
     "9": {
       "id": 9,
-      "content": "Inertia is a property of matter."
+      "content": "An ostritch's eye is bigger than its brain"
+    },
+    "10": {
+      "content": "It is physically impossible for pigs to look into the sky",
+      "id": 10
     }
   }
 }
