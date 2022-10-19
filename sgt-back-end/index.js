@@ -56,7 +56,8 @@ app.post('/api/grades', (req, res) => {
     const params = [newGrade.name, newGrade.course, newGrade.score];
     db.query(sql, params)
       .then(result => {
-        res.status(201).json(newGrade);
+        const grade = result.rows[0];
+        res.status(201).json(grade);
       })
       .catch(err => {
         console.error(err);
@@ -92,7 +93,7 @@ app.put('/api/grades/:gradeId', (req, res) => {
         if (!grade) {
           res.status(404).json(errors.grade);
         } else {
-          res.status(200).json(update);
+          res.status(200).json(grade);
         }
       })
       .catch(err => {
@@ -119,7 +120,7 @@ app.delete('/api/grades/:gradeId', (req, res) => {
         if (!grade) {
           res.status(404).json(errors.grade);
         } else {
-          res.status(204).json(grade);
+          res.sendStatus(204);
         }
       })
       .catch(err => {
