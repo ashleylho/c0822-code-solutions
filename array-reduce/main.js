@@ -27,17 +27,17 @@ const product = numbers.reduce((previousValue, currentValue) => {
 });
 console.log('product:', product);
 
-const totalAmount = 0;
-// const balance = account.reduce((previousValue, currentValue) => {
-//   if (currentValue.type === 'deposit') {
-//     totalAmount += currentValue.amount;
-//   } else if (currentValue.type === 'withdrawal') {
-//     totalAmount -= currentValue.amount;
-//   }
-//   return totalAmount;
-// }, totalAmount);
+let totalAmount = 0;
+const balance = account.reduce((previousValue, currentValue) => {
+  if (currentValue.type === 'deposit') {
+    totalAmount += currentValue.amount;
+  } else if (currentValue.type === 'withdrawal') {
+    totalAmount -= currentValue.amount;
+  }
+  return totalAmount;
+}, totalAmount);
 
-// console.log('balance:', balance);
+console.log('balance:', balance);
 
 const objectResult = {};
 const composite = traits.reduce((previousValue, currentValue) => {
