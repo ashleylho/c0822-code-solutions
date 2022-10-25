@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+span {
+  padding-left: 0.5rem;
+  vertical-align: bottom;
+}
+
+.outside {
+  padding: 0.5rem 0.9rem;
+  border-radius: 1.5rem;
+  position: relative;
+  background-color: black;
+  border: solid;
+}
+
+.outside-after {
+  padding: 0.5rem 0.9rem;
+  border-radius: 1.5rem;
+  position: relative;
+  background-color: rgb(102 146 135);
+  border: solid rgb(102 146 135);
+}
+
+.before {
+  border-radius: 50%;
+  background-color: white;
+  height: 100%;
+  width: 55%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.after {
+  border-radius: 50%;
+  background-color: white;
+  height: 100%;
+  width: 55%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
