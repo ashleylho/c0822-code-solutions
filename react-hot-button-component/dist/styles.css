@@ -1,0 +1,30 @@
+button {
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border: solid black 2px;
+}
+
+.cold {
+  background-color: #351c74;
+}
+
+.warming {
+  background-color: #674ea7;
+}
+
+.warm {
+  background-color: #e06666;
+}
+
+.warmer {
+  background-color: #f6b26b;
+}
+
+.hot {
+  background-color: yellow;
+}
+
+.fire {
+  background-color: white;
+  color: black;
+}
