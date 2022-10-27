@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  text-align: center;
+  width: 50%;
+  margin: 1px auto;
+}
+
+.details {
+  border: solid 1px;
+  margin: 1px 0;
+}
+
+.topic {
+  background-color: pink;
+  border: solid 1px;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
