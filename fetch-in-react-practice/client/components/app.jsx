@@ -70,7 +70,9 @@ export default class App extends React.Component {
     })
       .then(res => res.json())
       .then(todo => {
-        // const copy = [...this.state.todos];
+        const copy = [...this.state.todos];
+        copy[index] = todo;
+        this.setState({ todos: copy });
       });
 
     /**
