@@ -8,7 +8,6 @@ ul {
 }
 
 li {
-  text-align: center;
   width: 50%;
   margin: 1px auto;
 }
@@ -16,13 +15,15 @@ li {
 .details {
   border: solid 1px;
   margin: 1px 0;
+  padding: 10px;
 }
 
 .topic {
-  background-color: pink;
+  background-color: rgb(210 229 238);
   border: solid 1px;
   padding: 0.5rem;
   cursor: pointer;
+  font-size: 1.5rem;
 }
 
 .hidden {

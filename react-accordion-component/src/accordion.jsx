@@ -8,9 +8,8 @@ export default class Accordion extends React.Component {
   }
 
   openTopic(event) {
-    if (this.state.clickedTopicId === null) {
-      this.setState({ clickedTopicId: event.target.dataset.topicId });
-    } else if (event.target.dataset.topicId === this.state.clickedTopicId) {
+    this.setState({ clickedTopicId: event.target.dataset.topicId });
+    if (event.target.dataset.topicId === this.state.clickedTopicId) {
       this.setState({ clickedTopicId: null });
     }
   }
@@ -23,7 +22,7 @@ export default class Accordion extends React.Component {
         <div data-topic-id={topic.id} className='topic' onClick={this.openTopic}>
         {topic.name}
         </div>
-        <p className={toggle}>{topic.details}</p>
+        <div className={`details ${toggle}`}>{topic.details}</div>
         </li>;
     });
     return (
