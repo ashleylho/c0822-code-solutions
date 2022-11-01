@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  width: 200px;
+  height: 250px;
+  object-fit: contain;
+}
+
+.hidden {
+  display: none;
+}
+
+.container {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.column-full {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fa-chevron-left,
+.fa-chevron-right {
+  font-size: 2rem;
+  margin: 0 8rem;
+}
+
+.fa-circle {
+  margin: 0.5rem;
+  font-size: 1rem;
+}
